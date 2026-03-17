@@ -13,6 +13,7 @@ model = SAC(
     env,
     learning_rate=0.001,
     batch_size=256,
+    ent_coef=0.1,          # fixed exploration level — keeps exploring instead of decaying to 0
     verbose=1,
 )
 
